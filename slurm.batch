@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH -c 4
 #SBATCH --mem=32G
-#SBATCH --time=10:00:00
-#SBATCH --gres=gpu:1
+#SBATCH --time=24:00:00
+#SBATCH --gres=gpu:2
 #SBATCH --constraint=gpu32
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user an963984@ucf.edu
@@ -29,15 +29,23 @@ export PATH=/home/aelkommos/.conda/envs/shikra/bin:$PATH
 which python
 python --version
 
-
 # Run PyTorch Training
 echo "Shikra Eval Start:"
 module load accelerate
 
-srun accelerate launch --num_processes 4 \
+# Run accelerate config
+accelerate config
+
+# srun accelerate launch --num_processes 2 \
+#         --main_process_port 23786 \
+#         mllm/pipeline/finetune.py \
+#         config/shikra_eval_multi_rec.py \
+#         --cfg-options model_args.model_name_or_path=weights/shikra-7b
+
+srun accelerate launch --num_processes 2 \
         --main_process_port 23786 \
         mllm/pipeline/finetune.py \
-        config/shikra_eval_multi_rec.py \
+        config/shikra_eval_multi_pointqa.py \
         --cfg-options model_args.model_name_or_path=weights/shikra-7b
 
 # You're done!

@@ -6,7 +6,7 @@ POINT_TEST_COMMON_CFG_LOCAL = dict(
 
 POINT_TEST_COMMON_CFG_TWICE = dict(
     type='Point_QA_twice',
-    image_folder='/datasets/VG/VG_100K/',
+    image_folder='/datasets/VG/',
     template_file=r"{{fileDirname}}/template/VQA.json",
 )
 

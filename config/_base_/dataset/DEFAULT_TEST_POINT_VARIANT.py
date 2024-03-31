@@ -1,8 +1,8 @@
-# POINT_TEST_COMMON_CFG_LOCAL = dict(
-#     type='Point_QA_local',
-#     image_folder='zz1424:s3://publicdataset_8/Visual_Genome_Dataset_V1.2/unzip/data',
-#     template_file=r"{{fileDirname}}/template/VQA.json",
-# )
+POINT_TEST_COMMON_CFG_LOCAL = dict(
+    type='Point_QA_local',
+    image_folder='zz1424:s3://publicdataset_8/Visual_Genome_Dataset_V1.2/unzip/data',
+    template_file=r"{{fileDirname}}/template/VQA.json",
+)
 
 POINT_TEST_COMMON_CFG_TWICE = dict(
     type='Point_QA_twice',
@@ -10,12 +10,12 @@ POINT_TEST_COMMON_CFG_TWICE = dict(
     template_file=r"{{fileDirname}}/template/VQA.json",
 )
 
-# POINT_TEST_COMMON_CFG_V7W = dict(
-#     type='V7W_POINT',
-#     image_folder='sh41:s3://MultiModal/Monolith/academic/v7w/data',
-#     template_file=r"{{fileDirname}}/template/VQA.json",
-#     do_shuffle_choice=True,
-# )
+POINT_TEST_COMMON_CFG_V7W = dict(
+    type='V7W_POINT',
+    image_folder='sh41:s3://MultiModal/Monolith/academic/v7w/data',
+    template_file=r"{{fileDirname}}/template/VQA.json",
+    do_shuffle_choice=True,
+)
 
 DEFAULT_TEST_POINT_VARIANT = dict(
     # POINT_LOCAL_b_val=dict(**POINT_TEST_COMMON_CFG_LOCAL, version='b', filename='{{fileDirname}}/../../../data/pointQA_local_val.jsonl'),

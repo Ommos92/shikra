@@ -1,0 +1,8 @@
+{
+    "name": "Python: Current File",
+    "type": "python",
+    "request": "launch",
+    "program": "${workspaceFolder}/__main__.py",
+    "console": "integratedTerminal",
+    "args": ["-m", "mllm.dataset.single_image_dataset.map"]
+}

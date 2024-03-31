@@ -67,6 +67,8 @@ class MInstrDataset(QuestionTemplateMixin, Dataset):
         return json.loads(self.data[index])
 
     def get_image(self, image_path):
+        #May want to look into this portion of the code and how it is appending the
+        #image path to the image folder...is image_folder empty?
         if self.image_folder is not None:
             image_path = os.path.join(self.image_folder, image_path)
         image = read_img_general(image_path)
@@ -96,3 +98,5 @@ class MInstrDataset(QuestionTemplateMixin, Dataset):
     # noinspection PyMethodMayBeStatic
     def extra_repr(self) -> str:
         return ""
+
+

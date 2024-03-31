@@ -11,3 +11,6 @@ from .vcr import VCRDataset, VCRPredDataset
 from .vqav2 import VQAv2Dataset
 from .vqaex import VQAEXDataset
 from .pope import POPEVQADataset
+
+# Insert new datasets for LVIS
+

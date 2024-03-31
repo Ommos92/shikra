@@ -21,6 +21,8 @@ def read_img_general(img_path):
         # noinspection PyUnresolvedReferences
         return Image.fromarray(cv2.cvtColor(cv_img, cv2.COLOR_BGR2RGB))
     else:
+        # Remove the directory Image from the path - /datasets/VG/images/VG_100K/2364674.jpg
+        img_path = img_path.replace('/images/', '/')
         return Image.open(img_path).convert('RGB')
 
 

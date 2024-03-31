@@ -87,6 +87,11 @@ class Point_QA_twice(MInstrDataset):
         item = self.get_raw_item(index)
         # image
         img_path = item['file_path']
+
+        # Remove the appened images folder in this path /datasets/VG/images/VG_100K/2364674.jpg
+        img_path = item['file_path']
+        img_path = img_path.replace('/images/', '/')
+
         image = self.get_image(img_path)
         # answer
         answer = item['answer']

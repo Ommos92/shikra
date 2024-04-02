@@ -5,10 +5,17 @@ from typing import Dict, Any, Sequence
 
 import numpy as np
 
+from lvis.lvis import LVIS
+from lvis.eval import LVISEval
+
 import torch
 from torchvision.ops import box_iou
 from torch.utils.data import Dataset
+from torchmetrics.detection import MeanAveragePrecision, IntersectionOverUnion
 
+import os.path
+
+from ..utils.io import read_img_general
 
 from ..utils import (
     BaseComputeMetrics,
@@ -36,91 +43,79 @@ logging.basicConfig(
     handlers=[logging.StreamHandler(sys.stdout), ],
 )
 
-
+#Registers as a dataset
 @DATASETS.register_module()
-class LVISDataset(Dataset):
-    def __init__(self, filename, image_folder=None, seed=42, **kwargs):
+class LVISDataset(LVIS):
+    """annotation_path: path to the annotation file"""
+    def __init__(self,image_folder=None, **kwargs):
         super().__init__(**kwargs)
-        self.filename = filename
-        self.image_folder = image_folder
-        self.rng = np.random.default_rng(seed)
+        self.image_folder = image_folder  
 
-        self.data = []
-        with open(filename, 'r', encoding='utf8') as f:
-            # for line in tqdm(f, desc=f'{self.__class__.__name__} loading ann {self.filename}'):
-            for line in f:
-                self.data.append(line)
 
     def __getitem__(self, index):
-        item = self.get_raw_item(index)
-        
-        #should contain the path to the image from the folder mscoco2017 val
-        img_path = item['img_path']
-        ann_img = self.get_image(item) # Get image annotation
 
+        #Get the image annotations and the path to the image
+        image_path = self.dataset['images'][index]['coco_url']
+        file_name = str.split(image_path, '/')[-1]
+
+        image_id = self.dataset['images'][index]['id']
+        # Get the annotation ids for the image
+        ann_ids = self.get_ann_ids(img_ids=[image_id])
+        annotations = self.load_anns(ids=ann_ids)
+
+
+        # Retrieve Image
+        image = self.get_image(self.image_folder + "/" + file_name)
+
+        #Get the Bounding Box and the Point using the 
+        # Retrieve bounding boxes for the image
+        bounding_boxes = [np.array(ann['bbox']) for ann in annotations]
+        category_ids = [ann['category_id'] for ann in annotations]
 
         ret = {
             'image': image,
             'target': {
-                'boxes': [bbox],
+                'boxes': bounding_boxes
             },
-            'conversations': [
-                {
-                    'from': 'human',
-                    'value': question,
-                },
-                {
-                    'from': 'gpt',
-                    'value': f'Answer: {BOXES_PLACEHOLDER} .',
-                    'boxes_seq': [[0]],
-                }
-            ]
         }
         return ret
-
-    def get_image(self, item):
-        return {
-            'id': item['image']['id'],
-            'width': item['image']['width'],
-            'height': item['image']['height'],
-            'license': item['image']['license'],
-            'flickr_url': item['image']['flickr_url'],
-            'coco_url': item['image']['coco_url'],
-            'date_captured': item['image']['date_captured'],
-            'not_exhaustive_category_ids': item['image']['not_exhaustive_category_ids'],
-            'neg_category_ids': item['image']['neg_category_ids']
-        }
     
-    def get_categories(self, item):
-        return {
-            'id': item['categories']['id'],
-            'synset': item['categories']['synset'],
-            'synonyms': item['categories']['synonyms'],
-            'def': item['categories']['def'],
-            'instance_count': item['categories']['instance_count'],
-            'image_count': item['categories']['image_count'],
-            'frequency': item['categories']['frequency']
-        }
-
-    def get_annotation(self, item):
-        return {
-            'id': item['annotation']['id'],
-            'image_id': item['annotation']['image_id'],
-            'category_id': item['annotation']['category_id'],
-            'segmentation': item['annotation']['segmentation'],
-            'area': item['annotation']['area'],
-            'bbox': item['annotation']['bbox']
-        }
+    def __len__(self):
+        return len(self.dataset['images'])
+    
+    def get_image(self, image_path):
+        """Get the image from the image folder using the annotation id 
+        Args:
+            annotation_id: the id of the annotation
+            Returns:
+                image: the image from the image folder"""
+        image_name = image_path.replace('http://images.cocodataset.org/val2017/', self.image_folder + '/')
+        if self.image_folder is not None:
+            image_path = os.path.join(self.image_folder, image_name)
+        image = read_img_general(image_path)
+        return image
 
 
 
 @METRICS.register_module()
 class MAPComputeMetrics(BaseComputeMetrics):
+    """
+    Computes the Mean Average Precision (MAP) metric for the LVIS dataset over the number of objects detected 
+    in the image. Inherits the LVISEval class from the lvis package and the BaseComputeMetrics class from the
+    mllm package. LVIS Eval should be able to compute the MAP metric for the LVIS dataset.
+    """
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.box_formatter: BoxFormatter = self.preprocessor['target']['boxes']
+        self.metric = MeanAveragePrecision(box_format='xywh', iou_type='bbox')
 
     def calculate_metric(self, preds: Sequence[str], targets: Sequence[str]) -> Dict[str, Any]:
+        
+        self.box_formatter
+        # Need to calculate the MAP score per number of objects in the image
+        average_precisions = []
+
+
         failed = 0
         target_failed = 0
 

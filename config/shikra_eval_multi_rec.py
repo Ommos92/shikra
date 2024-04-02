@@ -8,8 +8,8 @@ training_args = dict(
     do_predict=False,
     do_multi_predict=True,
 
-    fp16=True,
-    fp16_full_eval=True,
+    fp16=False,
+    fp16_full_eval=False,
     bf16=False,
     bf16_full_eval=False,
     per_device_eval_batch_size=2,

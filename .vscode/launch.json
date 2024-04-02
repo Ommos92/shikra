@@ -4,5 +4,29 @@
     "request": "launch",
     "program": "${workspaceFolder}/__main__.py",
     "console": "integratedTerminal",
-    "args": ["-m", "mllm.dataset.single_image_dataset.map"]
+    "justMyCode": false,
+    "args": [
+        "-m",
+        "mllm.dataset.single_image_dataset.map"
+    ],
+    "configurations": [
+        {
+            "name": "Debug LVIS",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: finetune.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/mllm/pipeline/finetune.py",
+            "args": ["config/shikra_eval_multi_rec.py", "--cfg-options", "model_args.model_name_or_path=weights/shikra-7b/"],
+            "console": "integratedTerminal",
+            "env": {"CUDA_VISIBLE_DEVICES": "3"}
+        }
+
+
+    ]
 }

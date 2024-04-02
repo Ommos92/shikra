@@ -9,8 +9,52 @@ You can access all the data we utilize by downloading the ZIP file from [Google 
     |-- blip_laion_cc_sbu_558k.jsonl
     |-- CAP_coco2014_train.jsonl
     |-- CWB_flickr30k_train.jsonl
-    ...
-```
+    ...VQAv2_TEST_COMMON_CFG = dict(
+    type='VQAv2Dataset',
+    image_folder=r'zz1424:s3://publicdataset_49/VQAv2/unzip/',
+    template_file=r"{{fileDirname}}/template/VQA.json",
+)
+
+DEFAULT_TEST_VQAv2_VARIANT = dict(
+    VQAv2_val=dict(
+        **VQAv2_TEST_COMMON_CFG,
+        filename=r'{{fileDirname}}/../../../data/v2_OpenEnded_mscoco_val2014_questions.jsonl',
+    ),
+    VQAv2_testdev=dict(
+        **VQAv2_TEST_COMMON_CFG,
+        filename=r'{{fileDirname}}/../../../data/v2_OpenEnded_mscoco_test-dev2015_questions.jsonl',
+        has_annotation=False,
+    ),
+    VQAv2_test=dict(
+        **VQAv2_TEST_COMMON_CFG,
+        filename=r'{{fileDirname}}/../../../data/v2_OpenEnded_mscoco_test2015_questions.jsonl',
+        has_annotation=False,
+    ),
+)
+
+```VQAv2_TEST_COMMON_CFG = dict(
+    type='VQAv2Dataset',
+    image_folder=r'zz1424:s3://publicdataset_49/VQAv2/unzip/',
+    template_file=r"{{fileDirname}}/template/VQA.json",
+)
+
+DEFAULT_TEST_VQAv2_VARIANT = dict(
+    VQAv2_val=dict(
+        **VQAv2_TEST_COMMON_CFG,
+        filename=r'{{fileDirname}}/../../../data/v2_OpenEnded_mscoco_val2014_questions.jsonl',
+    ),
+    VQAv2_testdev=dict(
+        **VQAv2_TEST_COMMON_CFG,
+        filename=r'{{fileDirname}}/../../../data/v2_OpenEnded_mscoco_test-dev2015_questions.jsonl',
+        has_annotation=False,
+    ),
+    VQAv2_test=dict(
+        **VQAv2_TEST_COMMON_CFG,
+        filename=r'{{fileDirname}}/../../../data/v2_OpenEnded_mscoco_test2015_questions.jsonl',
+        has_annotation=False,
+    ),
+)
+
 
 Please note that the images can be downloaded separately from their official website. You can **update the dataset `image_folder` configuration in the `config/_base_/dataset/DEFAULT_XXXX_XXXXXX.py` directory accordingly**. 
 
@@ -53,4 +97,9 @@ POPE_TEST_COMMON_CFG = dict(
     image_folder=r'path/to/coco/val2014/on/your/computer',
 )
 ```
+
+# Writing a Dataset
+config file --- create a template file for loading in the Metrics Registered Classes
+shikra_eval_multi_rec.py
+
 

@@ -1,6 +1,6 @@
 MAP_COMMON_CFG_LOCAL = dict(
     type='LVISDataset',
-    image_folder='/dataset/MSCOCO2017/val2017',
+    image_folder='/dataset/LVIS/val2017',
     #template_file=r"{{fileDirname}}/template/VQA.json", 
 )
 

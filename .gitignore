@@ -3,3 +3,4 @@ weights/shikra-7b
 data/
 *.pyc
 *.pyi
+config/_base_/dataset/template/lvis_v1_val.json

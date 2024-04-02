@@ -48,7 +48,7 @@ logging.basicConfig(
 class LVISDataset(LVIS):
     """annotation_path: path to the annotation file"""
     def __init__(self,image_folder=None, **kwargs):
-        super().__init__(**kwargs)
+        super().__init__(annotation_path=kwargs.get('filename'))
         self.image_folder = image_folder  
 
 

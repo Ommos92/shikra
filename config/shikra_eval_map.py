@@ -8,11 +8,11 @@ training_args = dict(
     do_predict=False,
     do_multi_predict=True,
 
-    fp16=True,
-    fp16_full_eval=True,
+    fp16=False,
+    fp16_full_eval=False,
     bf16=False,
     bf16_full_eval=False,
-    per_device_eval_batch_size=2,
+    per_device_eval_batch_size=1,
 )
 
 model_args = dict(
@@ -23,7 +23,7 @@ data_args = dict(
     train=None,
     validation=None,
     test=None,
-    multitest={k: {'cfg': v, 'MAPComputeMetrics': dict(type='MapMetric')} for k, v in _base_.DEFAULT_TEST_MAP_VARIANT.items()},
+    multitest={k: {'cfg': v, 'compute_metric': dict(type='MAPComputeMetrics')} for k, v in _base_.DEFAULT_TEST_MAP_VARIANT.items()},
 
     compute_metric=None,
 

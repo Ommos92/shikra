@@ -18,11 +18,20 @@
             "console": "integratedTerminal"
         },
         {
-            "name": "Python: finetune.py",
+            "name": "Python: rec finetune.py",
             "type": "python",
             "request": "launch",
             "program": "${workspaceFolder}/mllm/pipeline/finetune.py",
             "args": ["config/shikra_eval_multi_rec.py", "--cfg-options", "model_args.model_name_or_path=weights/shikra-7b/"],
+            "console": "integratedTerminal",
+            "env": {"CUDA_VISIBLE_DEVICES": "3"}
+        },
+        {
+            "name": "Python: map finetune.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/mllm/pipeline/finetune.py",
+            "args": ["config/shikra_eval_map.py", "--cfg-options", "model_args.model_name_or_path=weights/shikra-7b/"],
             "console": "integratedTerminal",
             "env": {"CUDA_VISIBLE_DEVICES": "3"}
         }

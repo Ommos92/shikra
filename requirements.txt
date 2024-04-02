@@ -20,3 +20,9 @@ gradio
 fastapi
 uvicorn
 bitsandbytes
+
+torchmetrics
+
+
+pycocotools
+lvis

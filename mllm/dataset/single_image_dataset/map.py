@@ -170,12 +170,3 @@ class MAPComputeMetrics(BaseComputeMetrics):
             logger.warning(f"extract_ans for {string} but get exception: {e}")
             return None
 
-
-
-
-
-if __name__ == '__main__':
-
-    dataset = LVISDataset('/Users/andrewelkommos/Documents/gitworkspace/shikra/data/lvis_v1_val.json', '/Users/andrewelkommos/Documents/datasets/MSCOCO2017/val2017')
-
-    print(dataset[0])

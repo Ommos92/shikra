@@ -12,7 +12,7 @@ training_args = dict(
     fp16_full_eval=False,
     bf16=False,
     bf16_full_eval=False,
-    per_device_eval_batch_size=1,
+    per_device_eval_batch_size=4,
 )
 
 model_args = dict(

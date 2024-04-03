@@ -65,6 +65,10 @@ class RECDataset(MInstrDataset):
         }
         return ret
 
+    def __len__(self):
+        return 15
+        
+
 
 @METRICS.register_module()
 class RECComputeMetrics(BaseComputeMetrics):
@@ -77,6 +81,8 @@ class RECComputeMetrics(BaseComputeMetrics):
         target_failed = 0
 
         pred_boxes, target_boxes = [], []
+
+        #Loops through all predictions and targets
         for pred, target in zip(preds, targets):
             extract_pred = self.extract_ans(pred)
             extract_target = self.extract_ans(target)
@@ -91,6 +97,7 @@ class RECComputeMetrics(BaseComputeMetrics):
             target_boxes.append(extract_target)
             pred_boxes.append(extract_pred)
 
+        #Calculates the IOU and accuracy for all targets and
         with torch.no_grad():
             target_boxes = torch.tensor(target_boxes)
             pred_boxes = torch.tensor(pred_boxes)

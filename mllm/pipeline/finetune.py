@@ -124,7 +124,7 @@ def main():
             _prefix = f"multitest_{k}"
 
             trainer.compute_metrics = _compute_metrics
-            _pred_results = trainer.predict(_ds, metric_key_prefix=_prefix, **gen_kwargs)
+            _pred_results = trainer.predict(_ds, metric_key_prefix=_prefix, **gen_kwargs) 
             trainer.log_metrics(_prefix, _pred_results.metrics)  # noqa
             trainer.save_metrics(_prefix, _pred_results.metrics)  # noqa
             trainer.save_prediction(_pred_results, file_key_prefix=_prefix)

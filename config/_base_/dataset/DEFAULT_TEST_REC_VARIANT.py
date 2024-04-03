@@ -1,7 +1,7 @@
 REC_TEST_COMMON_CFG = dict(
     type='RECDataset',
     template_file=r'{{fileDirname}}/template/REC.json',
-    image_folder=r'/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+    image_folder=r'/home/ommos92/datasets/coco2014/train2014',
     max_dynamic_size=None,
 )
 

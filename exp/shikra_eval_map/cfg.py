@@ -238,12 +238,14 @@ DEFAULT_TEST_DATASET = dict(
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA_CoT.json',
         type='GQADataset',
         version='q-a'),
-    MAP_OBJ_val=dict(
+    MAP_OBJ_VAL=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/lvis_v1_val.json',
         image_folder='/home/ommos92/datasets/LVIS/val2017',
-        type='LVISDataset',
-        version='b'),
+        max_dynamic_size=None,
+        template_file=
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/MAP.json',
+        type='LVISDataset'),
     POINT_TWICE_gq_b_test=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
@@ -343,8 +345,7 @@ DEFAULT_TEST_DATASET = dict(
     REC_REFCOCOA_UNC_TESTA=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcoco+_unc_testA.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
@@ -352,8 +353,7 @@ DEFAULT_TEST_DATASET = dict(
     REC_REFCOCOA_UNC_TESTB=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcoco+_unc_testB.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
@@ -361,8 +361,7 @@ DEFAULT_TEST_DATASET = dict(
     REC_REFCOCOA_UNC_VAL=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcoco+_unc_val.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
@@ -370,8 +369,7 @@ DEFAULT_TEST_DATASET = dict(
     REC_REFCOCOG_UMD_TEST=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcocog_umd_test.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
@@ -379,8 +377,7 @@ DEFAULT_TEST_DATASET = dict(
     REC_REFCOCOG_UMD_VAL=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcocog_umd_val.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
@@ -388,8 +385,7 @@ DEFAULT_TEST_DATASET = dict(
     REC_REFCOCO_UNC_TESTA=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcoco_unc_testA.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
@@ -397,8 +393,7 @@ DEFAULT_TEST_DATASET = dict(
     REC_REFCOCO_UNC_TESTB=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcoco_unc_testB.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
@@ -406,8 +401,7 @@ DEFAULT_TEST_DATASET = dict(
     REC_REFCOCO_UNC_VAL=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcoco_unc_val.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
@@ -634,12 +628,14 @@ DEFAULT_TEST_GQA_VARIANT = dict(
         type='GQADataset',
         version='q-a'))
 DEFAULT_TEST_MAP_VARIANT = dict(
-    MAP_OBJ_val=dict(
+    MAP_OBJ_VAL=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/lvis_v1_val.json',
         image_folder='/home/ommos92/datasets/LVIS/val2017',
-        type='LVISDataset',
-        version='b'))
+        max_dynamic_size=None,
+        template_file=
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/MAP.json',
+        type='LVISDataset'))
 DEFAULT_TEST_POINT_VARIANT = dict(
     POINT_TWICE_gq_b_test=dict(
         filename=
@@ -790,8 +786,7 @@ DEFAULT_TEST_REC_VARIANT = dict(
     REC_REFCOCOA_UNC_TESTA=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcoco+_unc_testA.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
@@ -799,8 +794,7 @@ DEFAULT_TEST_REC_VARIANT = dict(
     REC_REFCOCOA_UNC_TESTB=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcoco+_unc_testB.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
@@ -808,8 +802,7 @@ DEFAULT_TEST_REC_VARIANT = dict(
     REC_REFCOCOA_UNC_VAL=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcoco+_unc_val.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
@@ -817,8 +810,7 @@ DEFAULT_TEST_REC_VARIANT = dict(
     REC_REFCOCOG_UMD_TEST=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcocog_umd_test.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
@@ -826,8 +818,7 @@ DEFAULT_TEST_REC_VARIANT = dict(
     REC_REFCOCOG_UMD_VAL=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcocog_umd_val.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
@@ -835,8 +826,7 @@ DEFAULT_TEST_REC_VARIANT = dict(
     REC_REFCOCO_UNC_TESTA=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcoco_unc_testA.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
@@ -844,8 +834,7 @@ DEFAULT_TEST_REC_VARIANT = dict(
     REC_REFCOCO_UNC_TESTB=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcoco_unc_testB.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
@@ -853,8 +842,7 @@ DEFAULT_TEST_REC_VARIANT = dict(
     REC_REFCOCO_UNC_VAL=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcoco_unc_val.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
@@ -973,7 +961,11 @@ GQA_TEST_COMMON_CFG = dict(
     scene_graph_index=None,
     type='GQADataset')
 MAP_COMMON_CFG_LOCAL = dict(
-    image_folder='/home/ommos92/datasets/LVIS/val2017', type='LVISDataset')
+    image_folder='/home/ommos92/datasets/LVIS/val2017',
+    max_dynamic_size=None,
+    template_file=
+    '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/MAP.json',
+    type='LVISDataset')
 POINT_TEST_COMMON_CFG_LOCAL = dict(
     image_folder=
     'zz1424:s3://publicdataset_8/Visual_Genome_Dataset_V1.2/unzip/data',
@@ -995,7 +987,7 @@ POPE_TEST_COMMON_CFG = dict(
     image_folder='openmmlab1424:s3://openmmlab/datasets/detection/coco/val2014',
     type='POPEVQADataset')
 REC_TEST_COMMON_CFG = dict(
-    image_folder='/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+    image_folder='/home/ommos92/datasets/coco2014/train2014',
     max_dynamic_size=None,
     template_file=
     '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
@@ -1020,13 +1012,15 @@ data_args = dict(
     compute_metric=None,
     gen_kwargs=dict(max_new_tokens=1024, num_beams=1),
     multitest=dict(
-        MAP_OBJ_val=dict(
+        MAP_OBJ_VAL=dict(
             cfg=dict(
                 filename=
                 '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/lvis_v1_val.json',
                 image_folder='/home/ommos92/datasets/LVIS/val2017',
-                type='LVISDataset',
-                version='b'),
+                max_dynamic_size=None,
+                template_file=
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/MAP.json',
+                type='LVISDataset'),
             compute_metric=dict(type='MAPComputeMetrics'))),
     test=None,
     train=None,
@@ -1071,7 +1065,7 @@ training_args = dict(
     logging_steps=1,
     output_dir='./exp/shikra_eval_map',
     overwrite_output_dir=False,
-    per_device_eval_batch_size=1,
+    per_device_eval_batch_size=4,
     predict_with_generate=True,
     remove_unused_columns=False,
     report_to='none',

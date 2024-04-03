@@ -1,0 +1,5 @@
+[
+    "Identify and locate all of the objects [<expr>] in the <image>. answer in [x,y,w,h] format.",
+    "Can you point out all of the [<expr>] in the image <image> and provide the coordinates of its location in [x,y,w,h] format?"
+
+]

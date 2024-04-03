@@ -3,7 +3,7 @@ from lvis.vis import LVISVis
 import numpy as np
 import matplotlib.pyplot as plt
 
-ann_path = '/Users/andrewelkommos/Documents/gitworkspace/shikra/data/lvis_v1_val.json'
+ann_path = '/home/ommos92/adv-computer-vision/shikra/data/lvis_v1_val.json'
 # Load LVIS dataset
 lvis = LVIS(ann_path)
 
@@ -19,11 +19,14 @@ category_ids = [ann['category_id'] for ann in annotations]
 
 # Retrieve category names
 cats = lvis.load_cats(ids=category_ids)
+labels_id = [cat['id'] for cat in cats] 
+# Retrieve all of the category names
+cat_list = [synonym for cat in cats for synonym in cat['name']]
+# Format into a single string separated by commas
+cat_list = ', '.join(cat_list)
 
 
-#print(bounding_boxes)
 
-# Need to split the input image into its file name and extension
 
 url = str.split(lvis.load_imgs([image_id])[0]['coco_url'], sep='/')
 # Load the image using its file name

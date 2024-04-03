@@ -1,6 +1,6 @@
 CLEVR_TEST_COMMON_CFG = dict(
     filename=
-    '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/CLEVR_val_questions_with_ans.jsonl',
+    '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/CLEVR_val_questions_with_ans.jsonl',
     image_folder=
     'zz1424:s3://publicdataset_33/CLEVR/unzip/CLEVR_v1.0/images/val',
     scene_graph_file=None,
@@ -8,953 +8,941 @@ CLEVR_TEST_COMMON_CFG = dict(
 DEFAULT_TEST_CLEVR_VARIANT = dict(
     CLEVR_A_VAL=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/CLEVR_val_questions_with_ans.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/CLEVR_val_questions_with_ans.jsonl',
         image_folder=
         'zz1424:s3://publicdataset_33/CLEVR/unzip/CLEVR_v1.0/images/val',
         scene_graph_file=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='ClevrDataset',
         version='q-a'),
     CLEVR_BS_VAL=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/CLEVR_val_questions_with_ans.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/CLEVR_val_questions_with_ans.jsonl',
         image_folder=
         'zz1424:s3://publicdataset_33/CLEVR/unzip/CLEVR_v1.0/images/val',
         scene_graph_file=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA_PCoT.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA_PCoT.json',
         type='ClevrDataset',
         version='q-a'),
     CLEVR_S_VAL=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/CLEVR_val_questions_with_ans.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/CLEVR_val_questions_with_ans.jsonl',
         image_folder=
         'zz1424:s3://publicdataset_33/CLEVR/unzip/CLEVR_v1.0/images/val',
         scene_graph_file=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA_CoT.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA_CoT.json',
         type='ClevrDataset',
         version='q-a'))
 DEFAULT_TEST_DATASET = dict(
     CLEVR_A_VAL=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/CLEVR_val_questions_with_ans.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/CLEVR_val_questions_with_ans.jsonl',
         image_folder=
         'zz1424:s3://publicdataset_33/CLEVR/unzip/CLEVR_v1.0/images/val',
         scene_graph_file=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='ClevrDataset',
         version='q-a'),
     CLEVR_BS_VAL=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/CLEVR_val_questions_with_ans.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/CLEVR_val_questions_with_ans.jsonl',
         image_folder=
         'zz1424:s3://publicdataset_33/CLEVR/unzip/CLEVR_v1.0/images/val',
         scene_graph_file=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA_PCoT.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA_PCoT.json',
         type='ClevrDataset',
         version='q-a'),
     CLEVR_S_VAL=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/CLEVR_val_questions_with_ans.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/CLEVR_val_questions_with_ans.jsonl',
         image_folder=
         'zz1424:s3://publicdataset_33/CLEVR/unzip/CLEVR_v1.0/images/val',
         scene_graph_file=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA_CoT.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA_CoT.json',
         type='ClevrDataset',
         version='q-a'),
     COCO_POPE_ADVERSARIAL_q_a=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/coco_pope_adversarial.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/coco_pope_adversarial.jsonl',
         image_folder=
         'openmmlab1424:s3://openmmlab/datasets/detection/coco/val2014',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='POPEVQADataset'),
     COCO_POPE_ADVERSARIAL_q_bca=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/coco_pope_adversarial.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/coco_pope_adversarial.jsonl',
         image_folder=
         'openmmlab1424:s3://openmmlab/datasets/detection/coco/val2014',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA_BCoT.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA_BCoT.json',
         type='POPEVQADataset'),
     COCO_POPE_POPULAR_q_a=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/coco_pope_popular.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/coco_pope_popular.jsonl',
         image_folder=
         'openmmlab1424:s3://openmmlab/datasets/detection/coco/val2014',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='POPEVQADataset'),
     COCO_POPE_POPULAR_q_bca=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/coco_pope_popular.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/coco_pope_popular.jsonl',
         image_folder=
         'openmmlab1424:s3://openmmlab/datasets/detection/coco/val2014',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA_BCoT.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA_BCoT.json',
         type='POPEVQADataset'),
     COCO_POPE_RANDOM_q_a=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/coco_pope_random.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/coco_pope_random.jsonl',
         image_folder=
         'openmmlab1424:s3://openmmlab/datasets/detection/coco/val2014',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='POPEVQADataset'),
     COCO_POPE_RANDOM_q_bca=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/coco_pope_random.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/coco_pope_random.jsonl',
         image_folder=
         'openmmlab1424:s3://openmmlab/datasets/detection/coco/val2014',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA_BCoT.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA_BCoT.json',
         type='POPEVQADataset'),
     FLICKR_EVAL_with_box=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/CWB_flickr30k_eval.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/CWB_flickr30k_eval.jsonl',
         image_folder=
         'zz1424:s3://production-public-flickr_image/Flickr_Image/unzip/flickr30k_images/flickr30k_images',
         max_dynamic_size=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/flickr30k.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/flickr30k.json',
         type='FlickrDataset'),
     FLICKR_EVAL_without_box=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/CWB_flickr30k_eval.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/CWB_flickr30k_eval.jsonl',
         image_folder=
         'zz1424:s3://production-public-flickr_image/Flickr_Image/unzip/flickr30k_images/flickr30k_images',
         max_dynamic_size=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/image_cap.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/image_cap.json',
         type='FlickrDataset'),
     FLICKR_TEST_with_box=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/CWB_flickr30k_test.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/CWB_flickr30k_test.jsonl',
         image_folder=
         'zz1424:s3://production-public-flickr_image/Flickr_Image/unzip/flickr30k_images/flickr30k_images',
         max_dynamic_size=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/flickr30k.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/flickr30k.json',
         type='FlickrDataset'),
     FLICKR_TEST_without_box=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/CWB_flickr30k_test.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/CWB_flickr30k_test.jsonl',
         image_folder=
         'zz1424:s3://production-public-flickr_image/Flickr_Image/unzip/flickr30k_images/flickr30k_images',
         max_dynamic_size=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/image_cap.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/image_cap.json',
         type='FlickrDataset'),
     GPT4GEN_QA=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/GPT4GEN_BoxCoT_test.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/GPT4GEN_BoxCoT_test.jsonl',
         image_folder=
         'zz1424:s3://production-public-flickr_image/Flickr_Image/unzip/flickr30k_images/flickr30k_images',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='GPT4Gen',
         version='a'),
     GPT4GEN_QBC=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/GPT4GEN_BoxCoT_test.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/GPT4GEN_BoxCoT_test.jsonl',
         image_folder=
         'zz1424:s3://production-public-flickr_image/Flickr_Image/unzip/flickr30k_images/flickr30k_images',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA_BCoT.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA_BCoT.json',
         type='GPT4Gen',
         version='bc'),
     GPT4GEN_QC=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/GPT4GEN_BoxCoT_test.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/GPT4GEN_BoxCoT_test.jsonl',
         image_folder=
         'zz1424:s3://production-public-flickr_image/Flickr_Image/unzip/flickr30k_images/flickr30k_images',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA_CoT.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA_CoT.json',
         type='GPT4Gen',
         version='c'),
     GQA_Q_A=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/gqa_testdev_all_questions.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/gqa_testdev_all_questions.jsonl',
         image_folder='zz1424:s3://publicdataset_11/GQA/unzip/images',
         scene_graph_file=None,
         scene_graph_index=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='GQADataset',
         version='q-a'),
     GQA_Q_A_BALANCED=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/gqa_testdev_balanced_questions.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/gqa_testdev_balanced_questions.jsonl',
         image_folder='zz1424:s3://publicdataset_11/GQA/unzip/images',
         scene_graph_file=None,
         scene_graph_index=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='GQADataset',
         version='q-a'),
     GQA_Q_BC=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/gqa_testdev_all_questions.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/gqa_testdev_all_questions.jsonl',
         image_folder='zz1424:s3://publicdataset_11/GQA/unzip/images',
         scene_graph_file=None,
         scene_graph_index=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA_BCoT.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA_BCoT.json',
         type='GQADataset',
         version='q-a'),
     GQA_Q_BC_BALANCED=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/gqa_testdev_balanced_questions.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/gqa_testdev_balanced_questions.jsonl',
         image_folder='zz1424:s3://publicdataset_11/GQA/unzip/images',
         scene_graph_file=None,
         scene_graph_index=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA_BCoT.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA_BCoT.json',
         type='GQADataset',
         version='q-a'),
     GQA_Q_C=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/gqa_testdev_all_questions.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/gqa_testdev_all_questions.jsonl',
         image_folder='zz1424:s3://publicdataset_11/GQA/unzip/images',
         scene_graph_file=None,
         scene_graph_index=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA_CoT.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA_CoT.json',
         type='GQADataset',
         version='q-a'),
     GQA_Q_C_BALANCED=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/gqa_testdev_balanced_questions.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/gqa_testdev_balanced_questions.jsonl',
         image_folder='zz1424:s3://publicdataset_11/GQA/unzip/images',
         scene_graph_file=None,
         scene_graph_index=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA_CoT.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA_CoT.json',
         type='GQADataset',
         version='q-a'),
-    MAP_OBJ_val=dict(
+    MAP_OBJ_VAL=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/lvis_v1_val.json',
-        image_folder='/dataset/MSCOCO2017/val2017',
-        type='LVISDataset',
-        version='b'),
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/lvis_v1_val.json',
+        image_folder='/home/ommos92/datasets/LVIS/val2017',
+        max_dynamic_size=None,
+        template_file=
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/MAP.json',
+        type='LVISDataset'),
     POINT_TWICE_gq_b_test=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
         image_folder='/datasets/VG/',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
         version='gq-b'),
     POINT_TWICE_gq_b_val=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
         image_folder='/datasets/VG/',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
         version='gq-b'),
     POINT_TWICE_gq_p_test=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
         image_folder='/datasets/VG/',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
         version='gq-p'),
     POINT_TWICE_gq_p_val=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
         image_folder='/datasets/VG/',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
         version='gq-p'),
     POINT_TWICE_oq_b_test=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
         image_folder='/datasets/VG/',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
         version='oq-b'),
     POINT_TWICE_oq_b_val=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
         image_folder='/datasets/VG/',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
         version='oq-b'),
     POINT_TWICE_oq_p_test=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
         image_folder='/datasets/VG/',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
         version='oq-p'),
     POINT_TWICE_oq_p_val=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
         image_folder='/datasets/VG/',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
         version='oq-p'),
     POINT_TWICE_sq_b_test=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
         image_folder='/datasets/VG/',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
         version='sq-b'),
     POINT_TWICE_sq_b_val=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
         image_folder='/datasets/VG/',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
         version='sq-b'),
     POINT_TWICE_sq_p_test=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
         image_folder='/datasets/VG/',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
         version='sq-p'),
     POINT_TWICE_sq_p_val=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
         image_folder='/datasets/VG/',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
         version='sq-p'),
     REC_REFCOCOA_UNC_TESTA=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/REC_refcoco+_unc_testA.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcoco+_unc_testA.jsonl',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/REC.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
         type='RECDataset'),
     REC_REFCOCOA_UNC_TESTB=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/REC_refcoco+_unc_testB.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcoco+_unc_testB.jsonl',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/REC.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
         type='RECDataset'),
     REC_REFCOCOA_UNC_VAL=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/REC_refcoco+_unc_val.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcoco+_unc_val.jsonl',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/REC.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
         type='RECDataset'),
     REC_REFCOCOG_UMD_TEST=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/REC_refcocog_umd_test.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcocog_umd_test.jsonl',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/REC.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
         type='RECDataset'),
     REC_REFCOCOG_UMD_VAL=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/REC_refcocog_umd_val.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcocog_umd_val.jsonl',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/REC.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
         type='RECDataset'),
     REC_REFCOCO_UNC_TESTA=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/REC_refcoco_unc_testA.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcoco_unc_testA.jsonl',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/REC.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
         type='RECDataset'),
     REC_REFCOCO_UNC_TESTB=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/REC_refcoco_unc_testB.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcoco_unc_testB.jsonl',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/REC.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
         type='RECDataset'),
     REC_REFCOCO_UNC_VAL=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/REC_refcoco_unc_val.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcoco_unc_val.jsonl',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/REC.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
         type='RECDataset'),
     VCR_test_qac_r=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/vcr_test.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/vcr_test.jsonl',
         image_folder='sh41:s3://MultiModal/Monolith/academic/vcr/vcr1images',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='VCRPredDataset',
         version='qac-r'),
     VCR_test_qc_a=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/vcr_test.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/vcr_test.jsonl',
         image_folder='sh41:s3://MultiModal/Monolith/academic/vcr/vcr1images',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='VCRPredDataset',
         version='qc-a'),
     VCR_test_qc_a_qc_r=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/vcr_test.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/vcr_test.jsonl',
         image_folder='sh41:s3://MultiModal/Monolith/academic/vcr/vcr1images',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='VCRPredDataset',
         version='qc-a-qc-r'),
     VCR_test_qc_rac=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/vcr_test.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/vcr_test.jsonl',
         image_folder='sh41:s3://MultiModal/Monolith/academic/vcr/vcr1images',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA_BCoT.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA_BCoT.json',
         type='VCRPredDataset',
         version='qc-rac'),
     VCR_val_q_ra=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/vcr_val.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/vcr_val.jsonl',
         image_folder='sh41:s3://MultiModal/Monolith/academic/vcr/vcr1images',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA_BCoT.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA_BCoT.json',
         type='VCRDataset',
         version='q-ra'),
     VCR_val_qac_r=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/vcr_val.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/vcr_val.jsonl',
         image_folder='sh41:s3://MultiModal/Monolith/academic/vcr/vcr1images',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='VCRDataset',
         version='qac-r'),
     VCR_val_qc_a=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/vcr_val.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/vcr_val.jsonl',
         image_folder='sh41:s3://MultiModal/Monolith/academic/vcr/vcr1images',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='VCRDataset',
         version='qc-a'),
     VCR_val_qc_a_qc_r=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/vcr_val.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/vcr_val.jsonl',
         image_folder='sh41:s3://MultiModal/Monolith/academic/vcr/vcr1images',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='VCRDataset',
         version='qc-a-qc-r'),
     VCR_val_qc_rac=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/vcr_val.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/vcr_val.jsonl',
         image_folder='sh41:s3://MultiModal/Monolith/academic/vcr/vcr1images',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA_BCoT.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA_BCoT.json',
         type='VCRDataset',
         version='qc-rac'),
     VQAv2_test=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/v2_OpenEnded_mscoco_test2015_questions.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/v2_OpenEnded_mscoco_test2015_questions.jsonl',
         has_annotation=False,
         image_folder='zz1424:s3://publicdataset_49/VQAv2/unzip/',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='VQAv2Dataset'),
     VQAv2_testdev=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/v2_OpenEnded_mscoco_test-dev2015_questions.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/v2_OpenEnded_mscoco_test-dev2015_questions.jsonl',
         has_annotation=False,
         image_folder='zz1424:s3://publicdataset_49/VQAv2/unzip/',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='VQAv2Dataset'),
     VQAv2_val=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/v2_OpenEnded_mscoco_val2014_questions.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/v2_OpenEnded_mscoco_val2014_questions.jsonl',
         image_folder='zz1424:s3://publicdataset_49/VQAv2/unzip/',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='VQAv2Dataset'))
 DEFAULT_TEST_FLICKR_VARIANT = dict(
     FLICKR_EVAL_with_box=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/CWB_flickr30k_eval.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/CWB_flickr30k_eval.jsonl',
         image_folder=
         'zz1424:s3://production-public-flickr_image/Flickr_Image/unzip/flickr30k_images/flickr30k_images',
         max_dynamic_size=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/flickr30k.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/flickr30k.json',
         type='FlickrDataset'),
     FLICKR_EVAL_without_box=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/CWB_flickr30k_eval.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/CWB_flickr30k_eval.jsonl',
         image_folder=
         'zz1424:s3://production-public-flickr_image/Flickr_Image/unzip/flickr30k_images/flickr30k_images',
         max_dynamic_size=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/image_cap.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/image_cap.json',
         type='FlickrDataset'),
     FLICKR_TEST_with_box=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/CWB_flickr30k_test.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/CWB_flickr30k_test.jsonl',
         image_folder=
         'zz1424:s3://production-public-flickr_image/Flickr_Image/unzip/flickr30k_images/flickr30k_images',
         max_dynamic_size=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/flickr30k.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/flickr30k.json',
         type='FlickrDataset'),
     FLICKR_TEST_without_box=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/CWB_flickr30k_test.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/CWB_flickr30k_test.jsonl',
         image_folder=
         'zz1424:s3://production-public-flickr_image/Flickr_Image/unzip/flickr30k_images/flickr30k_images',
         max_dynamic_size=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/image_cap.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/image_cap.json',
         type='FlickrDataset'))
 DEFAULT_TEST_GPTGEN_VARIANT = dict(
     GPT4GEN_QA=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/GPT4GEN_BoxCoT_test.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/GPT4GEN_BoxCoT_test.jsonl',
         image_folder=
         'zz1424:s3://production-public-flickr_image/Flickr_Image/unzip/flickr30k_images/flickr30k_images',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='GPT4Gen',
         version='a'),
     GPT4GEN_QBC=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/GPT4GEN_BoxCoT_test.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/GPT4GEN_BoxCoT_test.jsonl',
         image_folder=
         'zz1424:s3://production-public-flickr_image/Flickr_Image/unzip/flickr30k_images/flickr30k_images',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA_BCoT.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA_BCoT.json',
         type='GPT4Gen',
         version='bc'),
     GPT4GEN_QC=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/GPT4GEN_BoxCoT_test.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/GPT4GEN_BoxCoT_test.jsonl',
         image_folder=
         'zz1424:s3://production-public-flickr_image/Flickr_Image/unzip/flickr30k_images/flickr30k_images',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA_CoT.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA_CoT.json',
         type='GPT4Gen',
         version='c'))
 DEFAULT_TEST_GQA_VARIANT = dict(
     GQA_Q_A=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/gqa_testdev_all_questions.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/gqa_testdev_all_questions.jsonl',
         image_folder='zz1424:s3://publicdataset_11/GQA/unzip/images',
         scene_graph_file=None,
         scene_graph_index=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='GQADataset',
         version='q-a'),
     GQA_Q_A_BALANCED=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/gqa_testdev_balanced_questions.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/gqa_testdev_balanced_questions.jsonl',
         image_folder='zz1424:s3://publicdataset_11/GQA/unzip/images',
         scene_graph_file=None,
         scene_graph_index=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='GQADataset',
         version='q-a'),
     GQA_Q_BC=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/gqa_testdev_all_questions.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/gqa_testdev_all_questions.jsonl',
         image_folder='zz1424:s3://publicdataset_11/GQA/unzip/images',
         scene_graph_file=None,
         scene_graph_index=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA_BCoT.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA_BCoT.json',
         type='GQADataset',
         version='q-a'),
     GQA_Q_BC_BALANCED=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/gqa_testdev_balanced_questions.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/gqa_testdev_balanced_questions.jsonl',
         image_folder='zz1424:s3://publicdataset_11/GQA/unzip/images',
         scene_graph_file=None,
         scene_graph_index=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA_BCoT.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA_BCoT.json',
         type='GQADataset',
         version='q-a'),
     GQA_Q_C=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/gqa_testdev_all_questions.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/gqa_testdev_all_questions.jsonl',
         image_folder='zz1424:s3://publicdataset_11/GQA/unzip/images',
         scene_graph_file=None,
         scene_graph_index=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA_CoT.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA_CoT.json',
         type='GQADataset',
         version='q-a'),
     GQA_Q_C_BALANCED=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/gqa_testdev_balanced_questions.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/gqa_testdev_balanced_questions.jsonl',
         image_folder='zz1424:s3://publicdataset_11/GQA/unzip/images',
         scene_graph_file=None,
         scene_graph_index=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA_CoT.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA_CoT.json',
         type='GQADataset',
         version='q-a'))
 DEFAULT_TEST_MAP_VARIANT = dict(
-    MAP_OBJ_val=dict(
+    MAP_OBJ_VAL=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/lvis_v1_val.json',
-        image_folder='/dataset/MSCOCO2017/val2017',
-        type='LVISDataset',
-        version='b'))
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/lvis_v1_val.json',
+        image_folder='/home/ommos92/datasets/LVIS/val2017',
+        max_dynamic_size=None,
+        template_file=
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/MAP.json',
+        type='LVISDataset'))
 DEFAULT_TEST_POINT_VARIANT = dict(
     POINT_TWICE_gq_b_test=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
         image_folder='/datasets/VG/',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
         version='gq-b'),
     POINT_TWICE_gq_b_val=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
         image_folder='/datasets/VG/',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
         version='gq-b'),
     POINT_TWICE_gq_p_test=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
         image_folder='/datasets/VG/',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
         version='gq-p'),
     POINT_TWICE_gq_p_val=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
         image_folder='/datasets/VG/',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
         version='gq-p'),
     POINT_TWICE_oq_b_test=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
         image_folder='/datasets/VG/',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
         version='oq-b'),
     POINT_TWICE_oq_b_val=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
         image_folder='/datasets/VG/',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
         version='oq-b'),
     POINT_TWICE_oq_p_test=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
         image_folder='/datasets/VG/',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
         version='oq-p'),
     POINT_TWICE_oq_p_val=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
         image_folder='/datasets/VG/',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
         version='oq-p'),
     POINT_TWICE_sq_b_test=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
         image_folder='/datasets/VG/',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
         version='sq-b'),
     POINT_TWICE_sq_b_val=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
         image_folder='/datasets/VG/',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
         version='sq-b'),
     POINT_TWICE_sq_p_test=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
         image_folder='/datasets/VG/',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
         version='sq-p'),
     POINT_TWICE_sq_p_val=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
         image_folder='/datasets/VG/',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
         version='sq-p'))
 DEFAULT_TEST_POPE_VARIANT = dict(
     COCO_POPE_ADVERSARIAL_q_a=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/coco_pope_adversarial.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/coco_pope_adversarial.jsonl',
         image_folder=
         'openmmlab1424:s3://openmmlab/datasets/detection/coco/val2014',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='POPEVQADataset'),
     COCO_POPE_ADVERSARIAL_q_bca=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/coco_pope_adversarial.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/coco_pope_adversarial.jsonl',
         image_folder=
         'openmmlab1424:s3://openmmlab/datasets/detection/coco/val2014',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA_BCoT.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA_BCoT.json',
         type='POPEVQADataset'),
     COCO_POPE_POPULAR_q_a=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/coco_pope_popular.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/coco_pope_popular.jsonl',
         image_folder=
         'openmmlab1424:s3://openmmlab/datasets/detection/coco/val2014',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='POPEVQADataset'),
     COCO_POPE_POPULAR_q_bca=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/coco_pope_popular.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/coco_pope_popular.jsonl',
         image_folder=
         'openmmlab1424:s3://openmmlab/datasets/detection/coco/val2014',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA_BCoT.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA_BCoT.json',
         type='POPEVQADataset'),
     COCO_POPE_RANDOM_q_a=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/coco_pope_random.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/coco_pope_random.jsonl',
         image_folder=
         'openmmlab1424:s3://openmmlab/datasets/detection/coco/val2014',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='POPEVQADataset'),
     COCO_POPE_RANDOM_q_bca=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/coco_pope_random.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/coco_pope_random.jsonl',
         image_folder=
         'openmmlab1424:s3://openmmlab/datasets/detection/coco/val2014',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA_BCoT.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA_BCoT.json',
         type='POPEVQADataset'))
 DEFAULT_TEST_REC_VARIANT = dict(
     REC_REFCOCOA_UNC_TESTA=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/REC_refcoco+_unc_testA.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcoco+_unc_testA.jsonl',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/REC.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
         type='RECDataset'),
     REC_REFCOCOA_UNC_TESTB=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/REC_refcoco+_unc_testB.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcoco+_unc_testB.jsonl',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/REC.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
         type='RECDataset'),
     REC_REFCOCOA_UNC_VAL=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/REC_refcoco+_unc_val.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcoco+_unc_val.jsonl',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/REC.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
         type='RECDataset'),
     REC_REFCOCOG_UMD_TEST=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/REC_refcocog_umd_test.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcocog_umd_test.jsonl',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/REC.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
         type='RECDataset'),
     REC_REFCOCOG_UMD_VAL=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/REC_refcocog_umd_val.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcocog_umd_val.jsonl',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/REC.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
         type='RECDataset'),
     REC_REFCOCO_UNC_TESTA=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/REC_refcoco_unc_testA.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcoco_unc_testA.jsonl',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/REC.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
         type='RECDataset'),
     REC_REFCOCO_UNC_TESTB=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/REC_refcoco_unc_testB.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcoco_unc_testB.jsonl',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/REC.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
         type='RECDataset'),
     REC_REFCOCO_UNC_VAL=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/REC_refcoco_unc_val.jsonl',
-        image_folder=
-        '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcoco_unc_val.jsonl',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         max_dynamic_size=None,
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/REC.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
         type='RECDataset'))
 DEFAULT_TEST_VCR_VARIANT = dict(
     VCR_test_qac_r=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/vcr_test.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/vcr_test.jsonl',
         image_folder='sh41:s3://MultiModal/Monolith/academic/vcr/vcr1images',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='VCRPredDataset',
         version='qac-r'),
     VCR_test_qc_a=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/vcr_test.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/vcr_test.jsonl',
         image_folder='sh41:s3://MultiModal/Monolith/academic/vcr/vcr1images',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='VCRPredDataset',
         version='qc-a'),
     VCR_test_qc_a_qc_r=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/vcr_test.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/vcr_test.jsonl',
         image_folder='sh41:s3://MultiModal/Monolith/academic/vcr/vcr1images',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='VCRPredDataset',
         version='qc-a-qc-r'),
     VCR_test_qc_rac=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/vcr_test.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/vcr_test.jsonl',
         image_folder='sh41:s3://MultiModal/Monolith/academic/vcr/vcr1images',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA_BCoT.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA_BCoT.json',
         type='VCRPredDataset',
         version='qc-rac'),
     VCR_val_q_ra=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/vcr_val.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/vcr_val.jsonl',
         image_folder='sh41:s3://MultiModal/Monolith/academic/vcr/vcr1images',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA_BCoT.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA_BCoT.json',
         type='VCRDataset',
         version='q-ra'),
     VCR_val_qac_r=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/vcr_val.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/vcr_val.jsonl',
         image_folder='sh41:s3://MultiModal/Monolith/academic/vcr/vcr1images',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='VCRDataset',
         version='qac-r'),
     VCR_val_qc_a=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/vcr_val.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/vcr_val.jsonl',
         image_folder='sh41:s3://MultiModal/Monolith/academic/vcr/vcr1images',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='VCRDataset',
         version='qc-a'),
     VCR_val_qc_a_qc_r=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/vcr_val.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/vcr_val.jsonl',
         image_folder='sh41:s3://MultiModal/Monolith/academic/vcr/vcr1images',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='VCRDataset',
         version='qc-a-qc-r'),
     VCR_val_qc_rac=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/vcr_val.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/vcr_val.jsonl',
         image_folder='sh41:s3://MultiModal/Monolith/academic/vcr/vcr1images',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA_BCoT.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA_BCoT.json',
         type='VCRDataset',
         version='qc-rac'))
 DEFAULT_TEST_VQAv2_VARIANT = dict(
     VQAv2_test=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/v2_OpenEnded_mscoco_test2015_questions.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/v2_OpenEnded_mscoco_test2015_questions.jsonl',
         has_annotation=False,
         image_folder='zz1424:s3://publicdataset_49/VQAv2/unzip/',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='VQAv2Dataset'),
     VQAv2_testdev=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/v2_OpenEnded_mscoco_test-dev2015_questions.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/v2_OpenEnded_mscoco_test-dev2015_questions.jsonl',
         has_annotation=False,
         image_folder='zz1424:s3://publicdataset_49/VQAv2/unzip/',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='VQAv2Dataset'),
     VQAv2_val=dict(
         filename=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/v2_OpenEnded_mscoco_val2014_questions.jsonl',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/v2_OpenEnded_mscoco_val2014_questions.jsonl',
         image_folder='zz1424:s3://publicdataset_49/VQAv2/unzip/',
         template_file=
-        '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+        '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='VQAv2Dataset'))
 FLICKR_TEST_COMMON_CFG = dict(
     image_folder=
@@ -963,7 +951,7 @@ FLICKR_TEST_COMMON_CFG = dict(
     type='FlickrDataset')
 GPTGEN_TEST_COMMON_CFG = dict(
     filename=
-    '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/GPT4GEN_BoxCoT_test.jsonl',
+    '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/GPT4GEN_BoxCoT_test.jsonl',
     image_folder=
     'zz1424:s3://production-public-flickr_image/Flickr_Image/unzip/flickr30k_images/flickr30k_images',
     type='GPT4Gen')
@@ -973,47 +961,51 @@ GQA_TEST_COMMON_CFG = dict(
     scene_graph_index=None,
     type='GQADataset')
 MAP_COMMON_CFG_LOCAL = dict(
-    image_folder='/dataset/MSCOCO2017/val2017', type='LVISDataset')
+    image_folder='/home/ommos92/datasets/LVIS/val2017',
+    max_dynamic_size=None,
+    template_file=
+    '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/MAP.json',
+    type='LVISDataset')
 POINT_TEST_COMMON_CFG_LOCAL = dict(
     image_folder=
     'zz1424:s3://publicdataset_8/Visual_Genome_Dataset_V1.2/unzip/data',
     template_file=
-    '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+    '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
     type='Point_QA_local')
 POINT_TEST_COMMON_CFG_TWICE = dict(
     image_folder='/datasets/VG/',
     template_file=
-    '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+    '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
     type='Point_QA_twice')
 POINT_TEST_COMMON_CFG_V7W = dict(
     do_shuffle_choice=True,
     image_folder='sh41:s3://MultiModal/Monolith/academic/v7w/data',
     template_file=
-    '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+    '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
     type='V7W_POINT')
 POPE_TEST_COMMON_CFG = dict(
     image_folder='openmmlab1424:s3://openmmlab/datasets/detection/coco/val2014',
     type='POPEVQADataset')
 REC_TEST_COMMON_CFG = dict(
-    image_folder='/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+    image_folder='/home/ommos92/datasets/coco2014/train2014',
     max_dynamic_size=None,
     template_file=
-    '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/REC.json',
+    '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
     type='RECDataset')
 VCR_TEST_COMMON_CFG = dict(
     filename=
-    '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/vcr_test.jsonl',
+    '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/vcr_test.jsonl',
     image_folder='sh41:s3://MultiModal/Monolith/academic/vcr/vcr1images',
     type='VCRPredDataset')
 VCR_VAL_COMMON_CFG = dict(
     filename=
-    '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/vcr_val.jsonl',
+    '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/vcr_val.jsonl',
     image_folder='sh41:s3://MultiModal/Monolith/academic/vcr/vcr1images',
     type='VCRDataset')
 VQAv2_TEST_COMMON_CFG = dict(
     image_folder='zz1424:s3://publicdataset_49/VQAv2/unzip/',
     template_file=
-    '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/VQA.json',
+    '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
     type='VQAv2Dataset')
 data_args = dict(
     collator_kwargs=dict(max_length=1024, padding=True),
@@ -1023,89 +1015,81 @@ data_args = dict(
         REC_REFCOCOA_UNC_TESTA=dict(
             cfg=dict(
                 filename=
-                '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/REC_refcoco+_unc_testA.jsonl',
-                image_folder=
-                '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcoco+_unc_testA.jsonl',
+                image_folder='/home/ommos92/datasets/coco2014/train2014',
                 max_dynamic_size=None,
                 template_file=
-                '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/REC.json',
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
                 type='RECDataset'),
             compute_metric=dict(type='RECComputeMetrics')),
         REC_REFCOCOA_UNC_TESTB=dict(
             cfg=dict(
                 filename=
-                '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/REC_refcoco+_unc_testB.jsonl',
-                image_folder=
-                '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcoco+_unc_testB.jsonl',
+                image_folder='/home/ommos92/datasets/coco2014/train2014',
                 max_dynamic_size=None,
                 template_file=
-                '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/REC.json',
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
                 type='RECDataset'),
             compute_metric=dict(type='RECComputeMetrics')),
         REC_REFCOCOA_UNC_VAL=dict(
             cfg=dict(
                 filename=
-                '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/REC_refcoco+_unc_val.jsonl',
-                image_folder=
-                '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcoco+_unc_val.jsonl',
+                image_folder='/home/ommos92/datasets/coco2014/train2014',
                 max_dynamic_size=None,
                 template_file=
-                '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/REC.json',
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
                 type='RECDataset'),
             compute_metric=dict(type='RECComputeMetrics')),
         REC_REFCOCOG_UMD_TEST=dict(
             cfg=dict(
                 filename=
-                '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/REC_refcocog_umd_test.jsonl',
-                image_folder=
-                '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcocog_umd_test.jsonl',
+                image_folder='/home/ommos92/datasets/coco2014/train2014',
                 max_dynamic_size=None,
                 template_file=
-                '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/REC.json',
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
                 type='RECDataset'),
             compute_metric=dict(type='RECComputeMetrics')),
         REC_REFCOCOG_UMD_VAL=dict(
             cfg=dict(
                 filename=
-                '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/REC_refcocog_umd_val.jsonl',
-                image_folder=
-                '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcocog_umd_val.jsonl',
+                image_folder='/home/ommos92/datasets/coco2014/train2014',
                 max_dynamic_size=None,
                 template_file=
-                '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/REC.json',
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
                 type='RECDataset'),
             compute_metric=dict(type='RECComputeMetrics')),
         REC_REFCOCO_UNC_TESTA=dict(
             cfg=dict(
                 filename=
-                '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/REC_refcoco_unc_testA.jsonl',
-                image_folder=
-                '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcoco_unc_testA.jsonl',
+                image_folder='/home/ommos92/datasets/coco2014/train2014',
                 max_dynamic_size=None,
                 template_file=
-                '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/REC.json',
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
                 type='RECDataset'),
             compute_metric=dict(type='RECComputeMetrics')),
         REC_REFCOCO_UNC_TESTB=dict(
             cfg=dict(
                 filename=
-                '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/REC_refcoco_unc_testB.jsonl',
-                image_folder=
-                '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcoco_unc_testB.jsonl',
+                image_folder='/home/ommos92/datasets/coco2014/train2014',
                 max_dynamic_size=None,
                 template_file=
-                '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/REC.json',
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
                 type='RECDataset'),
             compute_metric=dict(type='RECComputeMetrics')),
         REC_REFCOCO_UNC_VAL=dict(
             cfg=dict(
                 filename=
-                '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/../../../data/REC_refcoco_unc_val.jsonl',
-                image_folder=
-                '/Users/andrewelkommos/Downloads/coco2014/images/train2014/',
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/REC_refcoco_unc_val.jsonl',
+                image_folder='/home/ommos92/datasets/coco2014/train2014',
                 max_dynamic_size=None,
                 template_file=
-                '/Users/andrewelkommos/Documents/gitworkspace/shikra/config/_base_/dataset/template/REC.json',
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/REC.json',
                 type='RECDataset'),
             compute_metric=dict(type='RECComputeMetrics'))),
     test=None,

@@ -30,15 +30,19 @@ cat_list = ', '.join(cat_list)
 
 url = str.split(lvis.load_imgs([image_id])[0]['coco_url'], sep='/')
 # Load the image using its file name
-image = plt.imread("/Users/andrewelkommos/Documents/datasets/MSCOCO17/val2017/" + url[-1])
+image = plt.imread("/home/ommos92/datasets/LVIS/val2017/" + url[-1])
 fig, ax = plt.subplots()
 # Display the image
-plt.imshow(image)
+#plt.imshow(image)
+
+
+url_str = "/home/ommos92/datasets/LVIS/val2017/" + url[-1]
+
+
 
 # Display the annotations
-vis = LVISVis(lvis_gt=ann_path, img_dir='/Users/andrewelkommos/Documents/datasets/MSCOCO17/val2017')
+vis = LVISVis(lvis_gt=ann_path, img_dir='/home/ommos92/datasets/LVIS/val2017/')
 for bbox in bounding_boxes:
     vis.vis_bbox(ax, bbox=bbox)
-
 
 plt.show()

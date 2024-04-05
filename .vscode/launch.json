@@ -34,8 +34,24 @@
             "args": ["config/shikra_eval_map.py", "--cfg-options", "model_args.model_name_or_path=weights/shikra-7b/"],
             "console": "integratedTerminal",
             "env": {"CUDA_VISIBLE_DEVICES": "3"}
-        }
-
+        },
+        {
+            "name": "Python: Server",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/mllm/demo/server.py",
+            "args": ["--model_path", "weights/shikra-7b/"],
+            "console": "integratedTerminal",
+            "env": {"CUDA_VISIBLE_DEVICES": "3"}
+        },
+        {
+            "name": "Python: Client",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/mllm/demo/fast_api_client.py",
+            "console": "integratedTerminal",
+            "env": {"CUDA_VISIBLE_DEVICES": "3"}
+        },
 
     ]
 }

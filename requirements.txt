@@ -16,7 +16,7 @@ matplotlib
 accelerate
 SentencePiece
 
-gradio
+gradio==3.43.2
 fastapi
 uvicorn
 bitsandbytes

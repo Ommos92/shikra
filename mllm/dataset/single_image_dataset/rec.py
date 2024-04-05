@@ -66,7 +66,7 @@ class RECDataset(MInstrDataset):
         return ret
 
     def __len__(self):
-        return 15
+        return 1
         
 
 

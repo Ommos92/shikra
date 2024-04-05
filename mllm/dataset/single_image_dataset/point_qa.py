@@ -67,7 +67,11 @@ class Point_QA_local(MInstrDataset):
                 }
             ]
         }
+        print(ret)
         return ret
+
+    def __len__(self):
+        return 1
 
 
 # noinspection PyPep8Naming

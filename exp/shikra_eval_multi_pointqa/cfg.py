@@ -249,7 +249,7 @@ DEFAULT_TEST_DATASET = dict(
     POINT_TWICE_gq_b_test=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
-        image_folder='/datasets/VG/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
@@ -257,7 +257,7 @@ DEFAULT_TEST_DATASET = dict(
     POINT_TWICE_gq_b_val=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
-        image_folder='/datasets/VG/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
@@ -265,7 +265,7 @@ DEFAULT_TEST_DATASET = dict(
     POINT_TWICE_gq_p_test=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
-        image_folder='/datasets/VG/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
@@ -273,7 +273,7 @@ DEFAULT_TEST_DATASET = dict(
     POINT_TWICE_gq_p_val=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
-        image_folder='/datasets/VG/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
@@ -281,7 +281,7 @@ DEFAULT_TEST_DATASET = dict(
     POINT_TWICE_oq_b_test=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
-        image_folder='/datasets/VG/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
@@ -289,7 +289,7 @@ DEFAULT_TEST_DATASET = dict(
     POINT_TWICE_oq_b_val=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
-        image_folder='/datasets/VG/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
@@ -297,7 +297,7 @@ DEFAULT_TEST_DATASET = dict(
     POINT_TWICE_oq_p_test=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
-        image_folder='/datasets/VG/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
@@ -305,7 +305,7 @@ DEFAULT_TEST_DATASET = dict(
     POINT_TWICE_oq_p_val=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
-        image_folder='/datasets/VG/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
@@ -313,7 +313,7 @@ DEFAULT_TEST_DATASET = dict(
     POINT_TWICE_sq_b_test=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
-        image_folder='/datasets/VG/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
@@ -321,7 +321,7 @@ DEFAULT_TEST_DATASET = dict(
     POINT_TWICE_sq_b_val=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
-        image_folder='/datasets/VG/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
@@ -329,7 +329,7 @@ DEFAULT_TEST_DATASET = dict(
     POINT_TWICE_sq_p_test=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
-        image_folder='/datasets/VG/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
@@ -337,7 +337,7 @@ DEFAULT_TEST_DATASET = dict(
     POINT_TWICE_sq_p_val=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
-        image_folder='/datasets/VG/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
@@ -640,7 +640,7 @@ DEFAULT_TEST_POINT_VARIANT = dict(
     POINT_TWICE_gq_b_test=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
-        image_folder='/datasets/VG/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
@@ -648,7 +648,7 @@ DEFAULT_TEST_POINT_VARIANT = dict(
     POINT_TWICE_gq_b_val=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
-        image_folder='/datasets/VG/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
@@ -656,7 +656,7 @@ DEFAULT_TEST_POINT_VARIANT = dict(
     POINT_TWICE_gq_p_test=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
-        image_folder='/datasets/VG/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
@@ -664,7 +664,7 @@ DEFAULT_TEST_POINT_VARIANT = dict(
     POINT_TWICE_gq_p_val=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
-        image_folder='/datasets/VG/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
@@ -672,7 +672,7 @@ DEFAULT_TEST_POINT_VARIANT = dict(
     POINT_TWICE_oq_b_test=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
-        image_folder='/datasets/VG/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
@@ -680,7 +680,7 @@ DEFAULT_TEST_POINT_VARIANT = dict(
     POINT_TWICE_oq_b_val=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
-        image_folder='/datasets/VG/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
@@ -688,7 +688,7 @@ DEFAULT_TEST_POINT_VARIANT = dict(
     POINT_TWICE_oq_p_test=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
-        image_folder='/datasets/VG/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
@@ -696,7 +696,7 @@ DEFAULT_TEST_POINT_VARIANT = dict(
     POINT_TWICE_oq_p_val=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
-        image_folder='/datasets/VG/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
@@ -704,7 +704,7 @@ DEFAULT_TEST_POINT_VARIANT = dict(
     POINT_TWICE_sq_b_test=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
-        image_folder='/datasets/VG/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
@@ -712,7 +712,7 @@ DEFAULT_TEST_POINT_VARIANT = dict(
     POINT_TWICE_sq_b_val=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
-        image_folder='/datasets/VG/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
@@ -720,7 +720,7 @@ DEFAULT_TEST_POINT_VARIANT = dict(
     POINT_TWICE_sq_p_test=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
-        image_folder='/datasets/VG/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
@@ -728,7 +728,7 @@ DEFAULT_TEST_POINT_VARIANT = dict(
     POINT_TWICE_sq_p_val=dict(
         filename=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
-        image_folder='/datasets/VG/',
+        image_folder='/home/ommos92/datasets/coco2014/train2014',
         template_file=
         '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
         type='Point_QA_twice',
@@ -973,7 +973,7 @@ POINT_TEST_COMMON_CFG_LOCAL = dict(
     '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
     type='Point_QA_local')
 POINT_TEST_COMMON_CFG_TWICE = dict(
-    image_folder='/datasets/VG/',
+    image_folder='/home/ommos92/datasets/coco2014/train2014',
     template_file=
     '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
     type='Point_QA_twice')
@@ -1012,16 +1012,126 @@ data_args = dict(
     compute_metric=None,
     gen_kwargs=dict(max_new_tokens=1024, num_beams=1),
     multitest=dict(
-        MAP_OBJ_VAL=dict(
+        POINT_TWICE_gq_b_test=dict(
             cfg=dict(
                 filename=
-                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/lvis_v1_val.json',
-                image_folder='/home/ommos92/datasets/LVIS/val2017',
-                max_dynamic_size=None,
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
+                image_folder='/home/ommos92/datasets/coco2014/train2014',
                 template_file=
-                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/MAP.json',
-                type='LVISDataset'),
-            compute_metric=dict(type='MAPComputeMetrics'))),
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
+                type='Point_QA_twice',
+                version='gq-b'),
+            compute_metric=dict(type='PointQAComputeMetrics')),
+        POINT_TWICE_gq_b_val=dict(
+            cfg=dict(
+                filename=
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
+                image_folder='/home/ommos92/datasets/coco2014/train2014',
+                template_file=
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
+                type='Point_QA_twice',
+                version='gq-b'),
+            compute_metric=dict(type='PointQAComputeMetrics')),
+        POINT_TWICE_gq_p_test=dict(
+            cfg=dict(
+                filename=
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
+                image_folder='/home/ommos92/datasets/coco2014/train2014',
+                template_file=
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
+                type='Point_QA_twice',
+                version='gq-p'),
+            compute_metric=dict(type='PointQAComputeMetrics')),
+        POINT_TWICE_gq_p_val=dict(
+            cfg=dict(
+                filename=
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
+                image_folder='/home/ommos92/datasets/coco2014/train2014',
+                template_file=
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
+                type='Point_QA_twice',
+                version='gq-p'),
+            compute_metric=dict(type='PointQAComputeMetrics')),
+        POINT_TWICE_oq_b_test=dict(
+            cfg=dict(
+                filename=
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
+                image_folder='/home/ommos92/datasets/coco2014/train2014',
+                template_file=
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
+                type='Point_QA_twice',
+                version='oq-b'),
+            compute_metric=dict(type='PointQAComputeMetrics')),
+        POINT_TWICE_oq_b_val=dict(
+            cfg=dict(
+                filename=
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
+                image_folder='/home/ommos92/datasets/coco2014/train2014',
+                template_file=
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
+                type='Point_QA_twice',
+                version='oq-b'),
+            compute_metric=dict(type='PointQAComputeMetrics')),
+        POINT_TWICE_oq_p_test=dict(
+            cfg=dict(
+                filename=
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
+                image_folder='/home/ommos92/datasets/coco2014/train2014',
+                template_file=
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
+                type='Point_QA_twice',
+                version='oq-p'),
+            compute_metric=dict(type='PointQAComputeMetrics')),
+        POINT_TWICE_oq_p_val=dict(
+            cfg=dict(
+                filename=
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
+                image_folder='/home/ommos92/datasets/coco2014/train2014',
+                template_file=
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
+                type='Point_QA_twice',
+                version='oq-p'),
+            compute_metric=dict(type='PointQAComputeMetrics')),
+        POINT_TWICE_sq_b_test=dict(
+            cfg=dict(
+                filename=
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
+                image_folder='/home/ommos92/datasets/coco2014/train2014',
+                template_file=
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
+                type='Point_QA_twice',
+                version='sq-b'),
+            compute_metric=dict(type='PointQAComputeMetrics')),
+        POINT_TWICE_sq_b_val=dict(
+            cfg=dict(
+                filename=
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
+                image_folder='/home/ommos92/datasets/coco2014/train2014',
+                template_file=
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
+                type='Point_QA_twice',
+                version='sq-b'),
+            compute_metric=dict(type='PointQAComputeMetrics')),
+        POINT_TWICE_sq_p_test=dict(
+            cfg=dict(
+                filename=
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_test.jsonl',
+                image_folder='/home/ommos92/datasets/coco2014/train2014',
+                template_file=
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
+                type='Point_QA_twice',
+                version='sq-p'),
+            compute_metric=dict(type='PointQAComputeMetrics')),
+        POINT_TWICE_sq_p_val=dict(
+            cfg=dict(
+                filename=
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/../../../data/pointQA_twice_val.jsonl',
+                image_folder='/home/ommos92/datasets/coco2014/train2014',
+                template_file=
+                '/home/ommos92/adv-computer-vision/shikra/config/_base_/dataset/template/VQA.json',
+                type='Point_QA_twice',
+                version='sq-p'),
+            compute_metric=dict(type='PointQAComputeMetrics'))),
     test=None,
     train=None,
     validation=None)
@@ -1060,12 +1170,12 @@ training_args = dict(
     do_multi_predict=True,
     do_predict=False,
     do_train=False,
-    fp16=False,
-    fp16_full_eval=False,
+    fp16=True,
+    fp16_full_eval=True,
     logging_steps=1,
-    output_dir='./exp/shikra_eval_map',
+    output_dir='./exp/shikra_eval_multi_pointqa',
     overwrite_output_dir=False,
-    per_device_eval_batch_size=1,
+    per_device_eval_batch_size=2,
     predict_with_generate=True,
     remove_unused_columns=False,
     report_to='none',

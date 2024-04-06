@@ -1,17 +1,5 @@
 [
-    "Using the image <image> as reference, kindly address my question '<question>' and guide me through the reasoning process. Please include bounding boxes information for objects in the image with square brackets.",
-    "Could you study the image <image> and respond to the following inquiry: '<question>'? Make sure to explain your thought process and add the bounding boxes of any involved objects in square brackets.",
-    "View the image <image> and provide insight into the question '<question>'. Please include a detailed explanation of your thought process and point out the bounding boxes of objects with square brackets.",
-    "Take a look at <image> and answer this query: '<question>'. Remember to clearly explain the reasoning behind your answer, and label the bounding boxess of objects using square brackets.",
-    "Contemplate the image <image> and furnish a solution to '<question>'. Make certain to describe the reasoning process and signify the bounding boxes of any pertinent objects using square brackets.",
-    "Observe the image <image> and give me some insight into the question '<question>'. Don't forget to incorporate your reasoning process and mention the bounding boxes of related objects within square brackets.",
-    "Evaluate the image <image> and impart your wisdom on the question '<question>'. Ensure providing the thought process involved and denote the bounding boxes of objects with square brackets.",
-    "Ponder upon the image <image> and provide me with the answer to '<question>'. Please elaborate on the reasoning process, and include bounding boxes data for the objects in square brackets.",
-    "Examine the image <image> and help me understand the solution to '<question>'. Kindly explain the reasoning process along with marking the bounding boxes of the concerned objects using square brackets.",
-    "Scrutinize the image <image> and respond to my inquiry: '<question>'. Make sure you mention the reasoning process and clarify the bounding boxes of relevant objects using square brackets.",
-    "Upon inspecting the image <image>, please address the question '<question>' and explain the underlying reasoning process. Also, identify the bboxes of objects in the image by marking them with square brackets.",
-    "In light of the image <image>, I seek the answer to '<question>'. Please provide your reasoning as well as the bboxes of objects involved, indicated with square brackets.",
-    "By assessing the image <image>, could you help me with the question '<question>'? Ensure a detailed reasoning process and mark the bboxes of any objects in square brackets, if necessary.",
-    "Can you interpret the image <image> and clarify the question '<question>'? Please explicate your reasoning process, and annotate the bboxes of relevant objects using square brackets.",
-    "Let the image <image> guide you to the answer of the question '<question>'. Offer insights into the reasoning process, and use square brackets to specify the bboxes of objects."
+    "You are an AI tasked with finding the bounding boxes <boxes> of objects in the image. Identify the bounding boxes of the {objects_str} in the image and return the coordinates of each object in the format <x1, y1, x2, y2>.",
+    "You are an AI tasked with finding the bounding boxes <boxes> of objects in the image. How many {objects_str} are in the image and what are their bounding box coordinates in the format <x1, y1, x2, y2>?",
+    "Assume being an AI tasked with finding the bounding boxes <boxes> of objects in the image. Identify the bounding boxes of the {objects_str} in the image and return the coordinates of each object in the format <x1, y1, x2, y2>.",
 ]

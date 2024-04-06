@@ -85,10 +85,15 @@ class LVISDataset(Dataset):
 
         # Formulate the question
         question = f"What is the relationship in position between the {objects_str} in the image? Identify each object's Coordinates using these reference bounding boxes <boxes>."
+        question = f"You are an AI tasked with finding the bounding boxes <boxes> of objects in the image. Identify the bounding boxes of the {objects_str} in the image and \
+        return the coordinates of each object in the format <x1, y1, x2, y2>."
 
         # Load a set of questions from the json file in templates directory
         # Get the template
         template = json.load(open('mllm/demo/templates/map.json', 'r', encoding='utf8'))
+
+        #Create a list of of size of the number of objects detected in the image [0,1,2, ..., n-1]
+        boxes_seq = list(range(1,num_objects-1))
 
 
         # Select a random template
@@ -98,9 +103,9 @@ class LVISDataset(Dataset):
         #Need to add in the number of objects detected in the image for the MAP Prediction Score
         # Also need to figure out boxes_seq as well...
         
-        response = fc.query(image_path, question, bounding_boxes, [[0,1,2]], self.server_url)
+        response = fc.query(image_path, question, bounding_boxes, [boxes_seq], self.server_url)
         _, image = fc.postprocess(response['response'], image=Image.open(image_path))
-        return {"response": response, "image" : str(image)}
+        return {"response": response, "image" : image}
     
     def __len__(self):
         return self.max_images
@@ -145,5 +150,11 @@ if __name__ == "__main__":
     dataset = LVISDataset(filename='data/lvis_v1_val.json', image_folder=r'/home/ommos92/datasets/LVIS/val2017')
     for i in range(100):
         response = dataset[i]
-        #response = create_api_query(query['image'], query['text'], query['boxes_value'], query['boxes_seq'], query['server_url'])
+
+        try:
+            image = response['image']
+            image.save(f'mllm/demo/results/{i}.png')
+        except:
+            pass
+
         print(response)

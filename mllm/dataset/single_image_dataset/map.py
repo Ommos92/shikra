@@ -89,13 +89,13 @@ class LVISDataset(MInstrDataset):
 
         # Need to remove repeating names
         label_list = list(set(label_list))
-        label_query = ', '.join(label_list)
+        label_query = ', '.join(label_list[:-1]) + ' and ' + label_list[-1]
 
         #Construct the Question
-        question = self.get_template().replace(QUESTION_PLACEHOLDER, label_list)
+        question = self.get_template().replace(EXPR_PLACEHOLDER, label_query)
 
         #Need to add in the number of objects detected in the image for the MAP Prediction Score
-        # Also need to figure out boxes_seq as well...
+        boxes_seq = list(range(1,num_objects-1))
 
         ret = {
             'image': image,
@@ -110,7 +110,7 @@ class LVISDataset(MInstrDataset):
                 {
                     'from': 'gpt',
                     'value': f'Answer: {BOXES_PLACEHOLDER} .',
-                    'boxes_seq': [[0]],
+                    'boxes_seq': [boxes_seq],
                 }
             ]
         }

@@ -4,6 +4,7 @@ import warnings
 from typing import Dict, Any, Sequence
 
 import numpy as np
+import re
 
 from lvis.lvis import LVIS
 from lvis.eval import LVISEval
@@ -12,6 +13,9 @@ import torch
 from torchvision.ops import box_iou, box_convert
 from torch.utils.data import Dataset
 from torchmetrics.detection import MeanAveragePrecision, IntersectionOverUnion
+
+from collections import defaultdict
+import itertools
 
 import os.path
 
@@ -55,9 +59,11 @@ class LVISDataset(MInstrDataset):
         super().__init__(*args, **kwargs, placeholders=(IMAGE_PLACEHOLDER, EXPR_PLACEHOLDER))
         self.lvis = LVIS(annotation_path=kwargs.get('filename'))
         self.image_folder = kwargs.get('image_folder')
-        max_images = 1
+        
+        #Set this for testing purposes, and truncating the
+        max_images = 3
         self.max_images = max_images if max_images is not None else len(self.lvis.dataset['images'])
-
+        
 
     def __getitem__(self, index):
 
@@ -73,29 +79,27 @@ class LVISDataset(MInstrDataset):
         # Retrieve Image
         image = self.get_image(self.image_folder + "/" + file_name)
 
+        #Define the maximum number of objects
+        max_objects = 1
         #Get the Bounding Box and the Point using the 
         # Retrieve bounding boxes for the image
-        bounding_boxes = [np.array(ann['bbox']) for ann in annotations]
+        bounding_boxes = [np.array(ann['bbox']) for ann in annotations[:max_objects]]
         bounding_boxes = box_convert(torch.tensor(bounding_boxes), 'xywh', 'xyxy').tolist()
 
-        category_ids = [ann['category_id'] for ann in annotations]
+        category_ids = [ann['category_id'] for ann in annotations[:max_objects]]
+        category_names = [self.lvis.cats[cat_id]['name'] for cat_id in category_ids]
 
-        #Get the number of objects in the dataset.
-        num_objects = len(bounding_boxes)
+        bbox_label_dict = defaultdict(list)
 
-        # Retrieve category names
-        cats = self.lvis.load_cats(ids=category_ids)
-        label_list = [cat['name'] for cat in cats]
+        for name, bbox in zip(category_names, bounding_boxes):
+            bbox_label_dict[name].append(bbox)
 
-        # Need to remove repeating names
-        label_list = list(set(label_list))
-        label_query = ', '.join(label_list[:-1]) + ' and ' + label_list[-1]
-
+        bbox_label_str = '; '.join([f'{k} {str(v).replace("], [", ";").replace(", ", ",")}' for k, v in list(bbox_label_dict.items())])
         #Construct the Question
-        question = self.get_template().replace(EXPR_PLACEHOLDER, label_query)
+        question = self.get_template().replace(EXPR_PLACEHOLDER, bbox_label_str)
 
         #Need to add in the number of objects detected in the image for the MAP Prediction Score
-        boxes_seq = list(range(1,num_objects-1))
+        boxes_seq = list(range(1,len(bbox_label_dict)))
 
         ret = {
             'image': image,
@@ -114,7 +118,7 @@ class LVISDataset(MInstrDataset):
                 }
             ]
         }
-        print(ret)
+        
         return ret
     
     def __len__(self):
@@ -144,28 +148,45 @@ class MAPComputeMetrics(BaseComputeMetrics):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.box_formatter: BoxFormatter = self.preprocessor['target']['boxes']
-        self.metric = MeanAveragePrecision(box_format='xywh', iou_type='bbox')
-        self.iou = IntersectionOverUnion(box_format='xywh'),
-        self.map_scores = {"1": [], "2": [], "3": [], "4": [], "5": [], "6-10": [], "11-20": [], "20+": []}  # store the MAP scores for each number of objects
- 
+        self.mAP = MeanAveragePrecision(box_format='xywh', iou_type='bbox')
     
     def calculate_metric(self, preds: Sequence[str], targets: Sequence[str]) -> Dict[str, Any]:
-        
-        self.box_formatter
-        # Need to calculate the MAP score per number of objects in the image
-        average_precisions = []
-
-
+        #Initialize the number of failed predictions and targets
         failed = 0
         target_failed = 0
 
-        pred_boxes, target_boxes = [], []
+        self.box_formatter
         for pred, target in zip(preds, targets):
             extract_pred = self.extract_ans(pred)
             extract_target = self.extract_ans(target)
+            try: 
+                # need to do IOU Calculation per sample
+                for i in range(len(extract_pred)):
+                    pred_box = extract_pred[i]
+                    target_box = extract_target[0][i]
 
-            print("Print out the Extracted Prediction: ", extract_pred)
-            print("Print out the Extracted Target: ", extract_target)
+                    pred_box = torch.tensor(pred_box)
+                    target_box = torch.tensor(target_box)
+
+                    pred_box = box_convert(pred_box, 'xywh', 'xyxy')
+                    target_box = box_convert(target_box, 'xywh', 'xyxy')
+
+                    pred = [dict(
+                        boxes=pred_box,
+                        scores=torch.tensor([1.0]),
+                        labels=torch.tensor(0),
+                    )]
+                    target = [dict(
+                        boxes=target_box,
+                        labels=torch.tensor(0),
+                    )]
+                    
+                    self.mAP.update(pred, target)
+                    
+
+            except:
+                extract_pred = None
+
             if extract_target is None:
                 target_failed += 1
                 logger.warning(f"failed to extract ans for target: {target}")
@@ -174,77 +195,39 @@ class MAPComputeMetrics(BaseComputeMetrics):
                 failed += 1
                 logger.warning(f"failed to extract ans for pred: {pred}")
                 extract_pred = [0, 0, 0, 0]
-            target_boxes.append(extract_target)
-            pred_boxes.append(extract_pred)
 
-        with torch.no_grad():
-            target_boxes = torch.tensor(target_boxes)
-            pred_boxes = torch.tensor(pred_boxes)
-            # normalized box value is too small, so that the area is 0.
-
-            #Convert the boxes to xyxy format
-            target_boxes = box_convert(target_boxes, 'xywh', 'xyxy')
-            #pred_boxes = box_convert(pred_boxes, 'xywh', 'xyxy')
-
-            ious = box_iou(pred_boxes * 1000, target_boxes * 1000)
-            #Get the number of objects by # number of targets.
-            ious = torch.einsum('i i -> i', ious)  # take diag elem
-
-            #Get the number of targets and then start to add the average precision
-            num_targets = len(target_boxes)
-            if num_targets == 1:
-                self.map_scores["1"].append(ious)
-
-            if num_targets == 2:
-                self.map_scores["2"].append(ious)
-            
-            if num_targets == 3:
-                self.map_scores["3"].append(ious)
-            
-            if num_targets == 4:
-                self.map_scores["4"].append(ious)
-            
-            if num_targets == 5:
-                self.map_scores["5"].append(ious)
-            
-            if num_targets >= 6 and num_targets <= 10:
-                self.map_scores["6-10"].append(ious)
-            
-            if num_targets >= 11 and num_targets <= 20:
-                self.map_scores["11-20"].append(ious)
-
-            if num_targets > 20:
-                self.map_scores["20+"].append(ious)
-
-            # NOTE: please note iou only calculate for success target
-            iou = ious.mean().item()
-            correct = (ious > 0.5).sum().item()
-
-            # Calculate the average precision
-
-
-        # HACK: currently we expand image to square. so this iou is the real iou.
-        warn_message = "this iou is calculate on normalized box. just for non-rigorous training progress checking." \
-                       "the value is consistent with real iou only if image.width == image.height."
-        warnings.warn(warn_message)
+        
+        # Compute the final mAP Score Per Objects
+        result = self.mAP.compute()
 
         return {
-            'accuracy': 1.0 * correct / len(targets),
+            'mAP': result,
             'target_failed': target_failed,
-            'failed': failed,
-            'iou': iou,
-            'warning': warn_message,
+            'failed': failed
         }
 
     def extract_ans(self, string: str):
+        """
+        Needs to extract multiple bounding boxes from the string.
+
+        Args:
+            string (str): _description_
+
+        Returns:
+            _type_: _description_
+        """
         try:
             list_of_boxes = self.box_formatter.extract(string)
-            if len(list_of_boxes) != 1 or len(list_of_boxes[0]) != 1:
-                return None
-            box = list_of_boxes[0][0]
-            if len(box) != 4:
-                return None
-            return box
+
+            # Find all occurrences of text followed by a bounding box
+            #matches = re.findall(r'([A-Za-z\s]+)\[\d+\.\d+,\d+\.\d+,\d+\.\d+,\d+\.\d+\]', string)
+
+            # Remove leading and trailing whitespace from each match
+            #class_names = [match.strip() for match in matches]
+
+            #print(class_names)
+            return list_of_boxes
+        
         except Exception as e:
             logger.warning(f"extract_ans for {string} but get exception: {e}")
             return None

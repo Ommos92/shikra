@@ -1,5 +1,9 @@
 [
-    "You are an AI tasked with finding the bounding boxes <boxes> of objects in the image <image>. Identify the bounding boxes of the <expr> in the image and return the coordinates of each object in the format <x1, y1, x2, y2>.",
-    "You are an AI tasked with finding the bounding boxes <boxes> of objects in the image <image>. How many <expr> are in the image and what are their bounding box coordinates in the format <x1, y1, x2, y2>?",
-    "Please interpret this image and give coordinates [x1,y1,x2,y2] for each object you mention."
+    "You are an AI tasked with finding the bounding boxes <boxes> of objects in the image <image>. Identify the bounding boxes of the <expr> in the image and return the coordinates of each object in the format [x1,y1,x2,y2]",
+    "Identify the objects in the image <image>. How many <expr> are in the image and what are their bounding box coordinates in the format [x1,y1,x2,y2]?",
+    "Find the bounding boxes of the <expr> in the image <image>. Return the coordinates of each object in the format [x1,y1,x2,y2].",
+    "What are the bounding boxes of the <expr> in the image <image>? Return the coordinates of each object in the format [x1,y1,x2,y2].",
+    "Please find the bounding boxes of the <expr> in the image <image>? Return the coordinates of each object in the format [x1,y1,x2,y2].",
+    "Place the bounding boxes around the <expr> in the image <image>. Return the coordinates of each object in the format [x1,y1,x2,y2].",
+    "In the case of the image <image>, identify the bounding boxes of the <expr>. Return the coordinates of each object in the format [x1,y1,x2,y2]."
 ]
